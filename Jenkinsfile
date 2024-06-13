@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/giokavt-ms/test-repo.git', branch: 'master'
+                git url 'https://github.com/giokavt-ms/test-repo.git', branch: 'master'
             }
         }
 
