@@ -5,7 +5,7 @@ pipeline {
         stage("Clone Code") {
             steps {
                 echo "Cloning the code"
-                git url: "https://github.com/giokavt-ms/test-repo.git", branch: "main"
+                git url: "https://github.com/giokavt-ms/test-repo.git", branch: "master"
             }
         }
         stage("Deploy") {
