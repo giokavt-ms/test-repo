@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the django application'
-                sh 'nohup python3 manage.py runserver 0.0.0.0:8000 &'
+                sh 'sudo systemctl restart django.service'
             }
         }
     }
