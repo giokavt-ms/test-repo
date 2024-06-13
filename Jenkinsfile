@@ -11,7 +11,7 @@ pipeline {
 
          stage('Setup Python') {
             steps {
-                sh 'sudo apt install python3.12-venv'
+                sh 'sudo apt install python3.12-venv -y'
             }
         }
         
